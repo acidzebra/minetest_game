@@ -925,7 +925,7 @@ function default.register_biomes(upper_limit)
 		node_riverbed = "default:gravel",
 		vertical_blend = 6,
 		depth_riverbed = 2,
-		min_pos = {x = -31000, y =-8, z = 20000},
+		min_pos = {x = -31000, y =-8, z = 20100},
 		max_pos = {x = 31000, y = 1, z = 31000},
 		heat_point = -5,
 		humidity_point = 3,
@@ -961,7 +961,7 @@ function default.register_biomes(upper_limit)
 		vertical_blend = 6,
 		node_water_top = "default:ice",
 		depth_water_top = 10,
-		min_pos = {x = -31000, y = -112, z = 20000},
+		min_pos = {x = -31000, y = -112, z = 20200},
 		max_pos = {x = 31000, y = -9, z = 31000},
 		heat_point = -5,
 		humidity_point = 3,
@@ -978,7 +978,7 @@ function default.register_biomes(upper_limit)
 		node_water_top = "default:ice",
 		depth_water_top = 10,
 		min_pos = {x = -31000, y = -112, z = -31000},
-		max_pos = {x = 31000, y = -9, z = -20000},
+		max_pos = {x = 31000, y = -9, z = -20300},
 		heat_point = -5,
 		humidity_point = 3,
 	})
@@ -990,7 +990,7 @@ function default.register_biomes(upper_limit)
 		node_riverbed = "default:gravel",
 		vertical_blend = 6,
 		depth_riverbed = 2,
-		min_pos = {x = -31000, y = 27, z = 20000},
+		min_pos = {x = -31000, y = 27, z = 20400},
 		max_pos = {x = 31000, y = 47, z = 31000},
 		heat_point = 0,
 		humidity_point = 40,
@@ -1003,7 +1003,7 @@ function default.register_biomes(upper_limit)
 		vertical_blend = 6,
 		depth_riverbed = 2,
 		min_pos = {x = -31000, y = 27, z = -31000},
-		max_pos = {x = 31000, y = 47, z = -20000},
+		max_pos = {x = 31000, y = 47, z = -20500},
 		heat_point = 0,
 		humidity_point = 40,
 	})
@@ -1017,7 +1017,7 @@ function default.register_biomes(upper_limit)
 		node_riverbed = "default:gravel",
 		depth_riverbed = 2,
 		vertical_blend = 6,
-		min_pos = {x = -31000, y =2, z = 20000},
+		min_pos = {x = -31000, y =2, z = 20100},
 		max_pos = {x = 31000, y = 46, z = 31000},
 		heat_point = 0,
 		humidity_point = 40,
@@ -1033,7 +1033,7 @@ function default.register_biomes(upper_limit)
 		depth_riverbed = 2,
 		vertical_blend = 6,
 		min_pos = {x = -31000, y =2, z = -31000},
-		max_pos = {x = 31000, y = 46, z = -20000},
+		max_pos = {x = 31000, y = 46, z = -20200},
 		heat_point = 0,
 		humidity_point = 40,
 	})
@@ -1047,7 +1047,7 @@ function default.register_biomes(upper_limit)
 		node_riverbed = "default:gravel",
 		depth_riverbed = 2,
 		vertical_blend = 6,
-		min_pos = {x = -31000, y =-3, z = 20000},
+		min_pos = {x = -31000, y =-3, z = 20300},
 		max_pos = {x = 31000, y = 1, z = 31000},
 		heat_point = 0,
 		humidity_point = 40,
@@ -1063,7 +1063,7 @@ function default.register_biomes(upper_limit)
 		depth_riverbed = 2,
 		vertical_blend = 6,
 		min_pos = {x = -31000, y =-3, z = -31000},
-		max_pos = {x = 31000, y = 1, z = -20000},
+		max_pos = {x = 31000, y = 1, z = -20400},
 		heat_point = 0,
 		humidity_point = 40,
 	})
@@ -1077,7 +1077,7 @@ function default.register_biomes(upper_limit)
 		node_riverbed = "default:gravel",
 		depth_riverbed = 2,
 		vertical_blend = 6,
-		min_pos = {x = -31000, y =-112, z = 20000},
+		min_pos = {x = -31000, y =-112, z = 20500},
 		max_pos = {x = 31000, y = -4, z = 31000},
 		heat_point = 0,
 		humidity_point = 40,
@@ -1093,7 +1093,7 @@ function default.register_biomes(upper_limit)
 		depth_riverbed = 2,
 		vertical_blend = 6,
 		min_pos = {x = -31000, y =-112, z = -31000},
-		max_pos = {x = 31000, y = -4, z = -20000},
+		max_pos = {x = 31000, y = -4, z = -20100},
 		heat_point = 0,
 		humidity_point = 40,
 	})
@@ -1110,7 +1110,7 @@ function default.register_biomes(upper_limit)
 		node_riverbed = "default:sand",
 		vertical_blend = 6,
 		depth_riverbed = 2,
-		min_pos = {x = -31000, y = 4, z = 20000},
+		min_pos = {x = -31000, y = 4, z = 20200},
 		max_pos = {x = 31000, y = 17, z = 31000},
 		heat_point = 25,
 		humidity_point = 70,
@@ -1128,7 +1128,7 @@ function default.register_biomes(upper_limit)
 		vertical_blend = 6,
 		depth_riverbed = 2,
 		min_pos = {x = -31000, y = 4, z = -31000},
-		max_pos = {x = 31000, y = 17, z = -20000},
+		max_pos = {x = 31000, y = 17, z = -20300},
 		heat_point = 25,
 		humidity_point = 70,
 	})
@@ -1144,7 +1144,7 @@ function default.register_biomes(upper_limit)
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
 		vertical_blend = 6,
-		min_pos = {x = -31000, y = -112, z = 20000},
+		min_pos = {x = -31000, y = -112, z = 20400},
 		max_pos = {x = 31000, y = 3, z = 31000},
 		heat_point = 25,
 		humidity_point = 70,
@@ -1161,7 +1161,7 @@ function default.register_biomes(upper_limit)
 		depth_riverbed = 2,
 		vertical_blend = 6,
 		min_pos = {x = -31000, y = -112, z = -31000},
-		max_pos = {x = 31000, y = 3, z = -20000},
+		max_pos = {x = 31000, y = 3, z = -20500},
 		heat_point = 25,
 		humidity_point = 70,
 	})	
@@ -1178,27 +1178,27 @@ function default.register_biomes(upper_limit)
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
 		vertical_blend = 6,
-		min_pos = {x = -31000, y = 4, z = 20000},
-		max_pos = {x = 31000, y = upper_limit, z = 31000},
-		heat_point = 20,
-		humidity_point = 35,
+		min_pos = {x = -31000, y = 125, z = -31000},
+		max_pos = {x = 31000, y = 141, z = 31000},
+		heat_point = 8,
+		humidity_point = 30,
 	})
 	
-	minetest.register_biome({
-		name = "snowy_grassland2",
-		node_dust = "default:snow",
-		node_top = "default:dirt_with_snow",
-		depth_top = 1,
-		node_filler = "default:dirt",
-		depth_filler = 1,
-		node_riverbed = "default:sand",
-		depth_riverbed = 2,
-		vertical_blend = 6,
-		min_pos = {x = -31000, y = 4, z = -31000},
-		max_pos = {x = 31000, y = upper_limit, z = -20000},
-		heat_point = 20,
-		humidity_point = 35,
-	})
+	-- minetest.register_biome({
+		-- name = "snowy_grassland2",
+		-- node_dust = "default:snow",
+		-- node_top = "default:dirt_with_snow",
+		-- depth_top = 1,
+		-- node_filler = "default:dirt",
+		-- depth_filler = 1,
+		-- node_riverbed = "default:sand",
+		-- depth_riverbed = 2,
+		-- vertical_blend = 6,
+		-- min_pos = {x = -31000, y = 4, z = -31000},
+		-- max_pos = {x = 31000, y = upper_limit, z = -20200},
+		-- heat_point = 20,
+		-- humidity_point = 35,
+	-- })
 	
 
 	minetest.register_biome({
@@ -1211,7 +1211,7 @@ function default.register_biomes(upper_limit)
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
 		vertical_blend = 6,
-		min_pos = {x = -31000, y =-112, z = 20000},
+		min_pos = {x = -31000, y =-112, z = 20300},
 		max_pos = {x = 31000, y = 3, z = 31000},
 		heat_point = 20,
 		humidity_point = 35,
@@ -1229,7 +1229,7 @@ function default.register_biomes(upper_limit)
 		depth_riverbed = 2,
 		vertical_blend = 6,
 		min_pos = {x = -31000, y =-112, z = -31000},
-		max_pos = {x = 31000, y = 3, z = -20000},
+		max_pos = {x = 31000, y = 3, z = -20400},
 		heat_point = 20,
 		humidity_point = 35,
 	})
@@ -1242,8 +1242,8 @@ function default.register_biomes(upper_limit)
 		node_filler = "default:dirt",
 		depth_filler = 1,
 		node_riverbed = "default:sand",
-		min_pos = {x = -31000, y = 6, z = -20500},
-		max_pos = {x = 31000, y = 150, z = 20500},
+		min_pos = {x = -31000, y = 6, z = -20100},
+		max_pos = {x = 31000, y = 150, z = 20200},
 		vertical_blend = 5,
 		depth_riverbed = 2,
 		heat_point = 40,
@@ -1257,8 +1257,8 @@ function default.register_biomes(upper_limit)
 		node_filler = "default:sand",
 		depth_filler = 2,
 		node_riverbed = "default:sand",
-		min_pos = {x = -31000, y = 3, z = -20500},
-		max_pos = {x = 31000, y = 5, z = 20500},
+		min_pos = {x = -31000, y = 3, z = -20300},
+		max_pos = {x = 31000, y = 5, z = 20400},
 		depth_riverbed = 2,
 		vertical_blend = 3,
 		heat_point = 50,
@@ -1273,7 +1273,7 @@ function default.register_biomes(upper_limit)
 		depth_filler = 3,
 		node_riverbed = "default:sand",
 		min_pos = {x = -31000, y = -112, z = -20500},
-		max_pos = {x = 31000, y = -3, z = 20500},
+		max_pos = {x = 31000, y = -3, z = 20600},
 		vertical_blend = 2,
 		depth_riverbed = 2,
 		heat_point = 50,
@@ -1289,8 +1289,8 @@ function default.register_biomes(upper_limit)
 		node_filler = "default:dirt",
 		depth_filler = 3,
 		node_riverbed = "default:sand",
-		min_pos = {x = -31000, y = 66, z = -20500},
-		max_pos = {x = 31000, y = 170, z = 20500},
+		min_pos = {x = -31000, y = 66, z = -20100},
+		max_pos = {x = 31000, y = 180, z = 20200},
 		depth_riverbed = 2,
 		vertical_blend = 5,
 		heat_point = 35,
@@ -1335,8 +1335,8 @@ function default.register_biomes(upper_limit)
 		node_filler = "default:dirt",
 		depth_filler = 3,
 		node_riverbed = "default:sand",
-		min_pos = {x = -31000, y = 6, z = -20500},
-		max_pos = {x = 31000, y = 63, z = 20500},
+		min_pos = {x = -31000, y = 6, z = -20300},
+		max_pos = {x = 31000, y = 63, z = 20400},
 		depth_riverbed = 2,
 		vertical_blend = 6,
 		heat_point = 55,
@@ -1350,9 +1350,10 @@ function default.register_biomes(upper_limit)
 		node_filler = "default:dirt",
 		depth_filler = 3,
 		min_pos = {x = -31000, y = -1, z = -20500},
-		max_pos = {x = 31000, y = 0, z = 20500},
+		max_pos = {x = 31000, y = 0, z = 20600},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
+		vertical_blend = 3,
 		heat_point = 60,
 		humidity_point = 68,
 	})
@@ -1366,8 +1367,8 @@ function default.register_biomes(upper_limit)
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
 		vertical_blend = 1,
-		min_pos = {x = -31000, y = -112, z = -20500},
-		max_pos = {x = 31000, y = -2, z = 20500},
+		min_pos = {x = -31000, y = -112, z = -20100},
+		max_pos = {x = 31000, y = -2, z = 20200},
 		heat_point = 60,
 		humidity_point = 68,
 	})
@@ -1381,8 +1382,8 @@ function default.register_biomes(upper_limit)
 		node_filler = "default:desert_sand",
 		depth_filler = 1,
 		node_stone = "default:desert_stone",
-		min_pos = {x = -31000, y = 12, z = -20500},
-		max_pos = {x = 31000, y = 33, z = 20500},
+		min_pos = {x = -31000, y = 12, z = -20300},
+		max_pos = {x = 31000, y = 33, z = 20400},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
 		vertical_blend = 5,
@@ -1398,7 +1399,7 @@ function default.register_biomes(upper_limit)
 		depth_filler = 3,
 		node_stone = "default:desert_stone",
 		min_pos = {x = -31000, y = -112, z = -20500},
-		max_pos = {x = 31000, y = 3, z = 20500},
+		max_pos = {x = 31000, y = 3, z = 20600},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
 		vertical_blend = 1,
@@ -1414,8 +1415,8 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:sand",
 		depth_filler = 1,
-		min_pos = {x = -31000, y = 14, z = -20500},
-		max_pos = {x = 31000, y = 66, z = 20500},
+		min_pos = {x = -31000, y = 14, z = -20100},
+		max_pos = {x = 31000, y = 66, z = 20200},
 		node_stone = "default:sandstone",
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
@@ -1430,11 +1431,12 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:sand",
 		depth_filler = 3,
-		min_pos = {x = -31000, y = -112, z = -20500},
-		max_pos = {x = 31000, y = 3, z = 20500},
+		min_pos = {x = -31000, y = -112, z = -20300},
+		max_pos = {x = 31000, y = 3, z = 20400},
 		node_stone = "default:sandstone",
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
+		vertical_blend = 3,
 		heat_point = 80,
 		humidity_point = 0,
 	})
@@ -1447,7 +1449,7 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:silver_sand",
 		min_pos = {x = -31000, y = 4, z = -20500},
-		max_pos = {x = 31000, y = 57, z = 20500},
+		max_pos = {x = 31000, y = 57, z = 20600},
 		depth_filler = 1,
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
@@ -1462,8 +1464,8 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:sand",
 		depth_filler = 3,
-		min_pos = {x = -31000, y = -112, z = -20500},
-		max_pos = {x = 31000, y = 3, z = 20500},
+		min_pos = {x = -31000, y = -112, z = -20100},
+		max_pos = {x = 31000, y = 3, z = 20200},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
 		vertical_blend = 2,
@@ -1479,8 +1481,8 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:dirt",
 		depth_filler = 1,
-		min_pos = {x = -31000, y = 8, z = -20500},
-		max_pos = {x = 31000, y = 44, z = 20500},
+		min_pos = {x = -31000, y = 8, z = -20300},
+		max_pos = {x = 31000, y = 44, z = 20400},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
 		vertical_blend = 5,
@@ -1494,10 +1496,11 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:dirt",
 		min_pos = {x = -31000, y = -1, z = -20500},
-		max_pos = {x = 31000, y = 0, z = 20500},
+		max_pos = {x = 31000, y = 0, z = 20600},
 		depth_filler = 3,
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
+		vertical_blend = 2,
 		heat_point = 79,
 		humidity_point = 42,
 	})
@@ -1508,8 +1511,8 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:sand",
 		depth_filler = 3,
-		min_pos = {x = -31000, y = -112, z = -20500},
-		max_pos = {x = 31000, y = -2, z = 20500},
+		min_pos = {x = -31000, y = -112, z = -20100},
+		max_pos = {x = 31000, y = -2, z = 20200},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
 		vertical_blend = 1,
@@ -1526,8 +1529,8 @@ function default.register_biomes(upper_limit)
 		node_filler = "default:dirt",
 		depth_filler = 3,
 		node_riverbed = "default:sand",
-		min_pos = {x = -31000, y = 5, z = -20500},
-		max_pos = {x = 31000, y = 45, z = 20500},
+		min_pos = {x = -31000, y = 5, z = -20300},
+		max_pos = {x = 31000, y = 45, z = 20400},
 		depth_riverbed = 2,
 		vertical_blend = 5,
 		heat_point = 76,
@@ -1541,9 +1544,10 @@ function default.register_biomes(upper_limit)
 		node_filler = "default:dirt",
 		depth_filler = 3,
 		min_pos = {x = -31000, y = -1, z = -20500},
-		max_pos = {x = 31000, y = 0, z = 20500},
+		max_pos = {x = 31000, y = 0, z = 20600},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
+		vertical_blend = 2,
 		heat_point = 76,
 		humidity_point = 75,
 	})
@@ -1554,8 +1558,8 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:sand",
 		depth_filler = 3,
-		min_pos = {x = -31000, y = -112, z = -20500},
-		max_pos = {x = 31000, y = -2, z = 20500},
+		min_pos = {x = -31000, y = -112, z = -20100},
+		max_pos = {x = 31000, y = -2, z = 20200},
 		depth_riverbed = 2,
 		vertical_blend = 1,
 		heat_point = 76,
@@ -1564,58 +1568,58 @@ function default.register_biomes(upper_limit)
 
 	-- Underground
 
---[[	minetest.register_biome({
+minetest.register_biome({
 		name = "underground",
 		y_max = -113,
 		y_min = -31000,
 		heat_point = 50,
 		humidity_point = 50,
 	})
-	--]]
+
 end
 
 -- Biomes for floatlands
 
 -- TODO Temporary simple biomes to be replaced by special floatland biomes later.
 
-function default.register_floatland_biomes(floatland_level, shadow_limit)
+-- function default.register_floatland_biomes(floatland_level, shadow_limit)
 
-	minetest.register_biome({
-		name = "floatland_grassland",
-		node_top = "default:dirt_with_grass",
-		depth_top = 1,
-		node_filler = "default:dirt",
-		depth_filler = 1,
-		y_max = 31000,
-		y_min = floatland_level + 2,
-		heat_point = 50,
-		humidity_point = 25,
-	})
+	-- minetest.register_biome({
+		-- name = "floatland_grassland",
+		-- node_top = "default:dirt_with_grass",
+		-- depth_top = 1,
+		-- node_filler = "default:dirt",
+		-- depth_filler = 1,
+		-- y_max = 31000,
+		-- y_min = floatland_level + 2,
+		-- heat_point = 50,
+		-- humidity_point = 25,
+	-- })
 
-	minetest.register_biome({
-		name = "floatland_coniferous_forest",
-		node_top = "default:dirt_with_coniferous_litter",
-		depth_top = 1,
-		node_filler = "default:dirt",
-		depth_filler = 3,
-		y_max = 31000,
-		y_min = floatland_level + 2,
-		heat_point = 50,
-		humidity_point = 75,
-	})
+	-- minetest.register_biome({
+		-- name = "floatland_coniferous_forest",
+		-- node_top = "default:dirt_with_coniferous_litter",
+		-- depth_top = 1,
+		-- node_filler = "default:dirt",
+		-- depth_filler = 3,
+		-- y_max = 31000,
+		-- y_min = floatland_level + 2,
+		-- heat_point = 50,
+		-- humidity_point = 75,
+	-- })
 
-	minetest.register_biome({
-		name = "floatland_ocean",
-		node_top = "default:sand",
-		depth_top = 1,
-		node_filler = "default:sand",
-		depth_filler = 3,
-		y_max = floatland_level + 1,
-		y_min = shadow_limit,
-		heat_point = 50,
-		humidity_point = 50,
-	})
-end
+	-- minetest.register_biome({
+		-- name = "floatland_ocean",
+		-- node_top = "default:sand",
+		-- depth_top = 1,
+		-- node_filler = "default:sand",
+		-- depth_filler = 3,
+		-- y_max = floatland_level + 1,
+		-- y_min = shadow_limit,
+		-- heat_point = 50,
+		-- humidity_point = 50,
+	-- })
+-- end
 
 
 --
@@ -1734,7 +1738,7 @@ local function register_grass_decoration(offset, scale, length)
 			persist = 0.6
 		},
 		biomes = {"grassland", "deciduous_forest", "floatland_grassland"},
-		y_max = 31000,
+		y_max = 185,
 		y_min = 1,
 		decoration = "default:grass_" .. length,
 	})
@@ -1755,7 +1759,7 @@ local function register_dry_grass_decoration(offset, scale, length)
 			persist = 0.6
 		},
 		biomes = {"savanna"},
-		y_max = 31000,
+		y_max = 185,
 		y_min = 1,
 		decoration = "default:dry_grass_" .. length,
 	})
@@ -1776,7 +1780,7 @@ local function register_fern_decoration(seed, length)
 			persist = 0.7
 		},
 		biomes = {"coniferous_forest", "floatland_coniferous_forest"},
-		y_max = 31000,
+		y_max = 165,
 		y_min = 6,
 		decoration = "default:fern_" .. length,
 	})
@@ -1801,7 +1805,7 @@ function default.register_decorations()
 			persist = 0.66
 		},
 		biomes = {"deciduous_forest"},
-		y_max = 31000,
+		y_max = 118,
 		y_min = 5,
 		schematic = minetest.get_modpath("default") .. "/schematics/apple_tree.mts",
 		flags = "place_center_x, place_center_z",
@@ -1823,7 +1827,7 @@ function default.register_decorations()
 			persist = 0.66
 		},
 		biomes = {"deciduous_forest"},
-		y_max = 31000,
+		y_max = 115,
 		y_min = 5,
 		schematic = minetest.get_modpath("default") .. "/schematics/apple_log.mts",
 		flags = "place_center_x",
@@ -1852,7 +1856,7 @@ function default.register_decorations()
 			},
 			biomes = {"rainforest"},
 			y_max = 32,
-			y_min = 1,
+			y_min = -1,
 			schematic = minetest.get_modpath("default") ..
 					"/schematics/emergent_jungle_tree.mts",
 			flags = "place_center_x, place_center_z",
@@ -1868,9 +1872,9 @@ function default.register_decorations()
 		deco_type = "schematic",
 		place_on = {"default:dirt_with_rainforest_litter", "default:dirt"},
 		sidelen = 80,
-		fill_ratio = 0.003,
+		fill_ratio = 0.005,
 		biomes = {"rainforest", "rainforest_swamp"},
-		y_max = 31000,
+		y_max = 120,
 		y_min = -1,
 		schematic = minetest.get_modpath("default") .. "/schematics/jungle_tree.mts",
 		flags = "place_center_x, place_center_z",
@@ -1885,7 +1889,7 @@ function default.register_decorations()
 		sidelen = 80,
 		fill_ratio = 0.002,
 		biomes = {"rainforest", "rainforest_swamp"},
-		y_max = 31000,
+		y_max = 120,
 		y_min = 1,
 		schematic = minetest.get_modpath("default") .. "/schematics/jungle_log.mts",
 		flags = "place_center_x",
@@ -1901,7 +1905,7 @@ function default.register_decorations()
 		deco_type = "schematic",
 		place_on = {"default:dirt_with_snow", "default:dirt_with_coniferous_litter"},
 		sidelen = 80,
-                fill_ratio = 0.005,
+        fill_ratio = 0.004,
 		--sidelen = 16,
 		--noise_params = {
 		--	offset = 0.010,
@@ -1911,9 +1915,9 @@ function default.register_decorations()
 		--	octaves = 3,
 		--	persist = 0.66
 		--},
-		biomes = {"taiga", "taiga2", "coniferous_forest", "floatland_coniferous_forest"},
-		y_max = 170,
-		y_min = 44,
+		biomes = {"taiga", "taiga2", "coniferous_forest", "floatland_coniferous_forest", "snowy_grassland"},
+		y_max = 188,
+		y_min = 50,
 		schematic = minetest.get_modpath("default") .. "/schematics/pine_tree.mts",
 		flags = "place_center_x, place_center_z",
 	})
@@ -1921,7 +1925,7 @@ function default.register_decorations()
 	minetest.register_decoration({
 		name = "default:small_pine_tree",
 		deco_type = "schematic",
-		place_on = {"default:dirt_with_snow", "default:dirt_with_coniferous_litter"},
+		place_on = {"default:dirt_with_snow", "default:dirt_with_coniferous_litter", "snowy_grassland"},
 		sidelen = 16,
 		noise_params = {
 			offset = 0.010,
@@ -1932,8 +1936,8 @@ function default.register_decorations()
 			persist = 0.66
 		},
 		biomes = {"taiga", "taiga2", "coniferous_forest", "floatland_coniferous_forest"},
-		y_max = 190,
-		y_min = 44,
+		y_max = 184,
+		y_min = 54,
 		schematic = minetest.get_modpath("default") .. "/schematics/small_pine_tree.mts",
 		flags = "place_center_x, place_center_z",
 	})
@@ -1945,9 +1949,9 @@ function default.register_decorations()
 		place_offset_y = 1,
 		sidelen = 80,
 		fill_ratio = 0.0018,
-		biomes = {"taiga", "taiga2", "coniferous_forest", "floatland_coniferous_forest"},
-		y_max = 180,
-		y_min = 54,
+		biomes = {"taiga", "taiga2", "coniferous_forest", "floatland_coniferous_forest", "snowy_grassland"},
+		y_max = 185,
+		y_min = 55,
 		schematic = minetest.get_modpath("default") .. "/schematics/pine_log.mts",
 		flags = "place_center_x",
 		rotation = "random",
@@ -1971,7 +1975,7 @@ function default.register_decorations()
 			persist = 0.66
 		},
 		biomes = {"savanna"},
-		y_max = 31000,
+		y_max = 95,
 		y_min = 4,
 		schematic = minetest.get_modpath("default") .. "/schematics/acacia_tree.mts",
 		flags = "place_center_x, place_center_z",
@@ -1993,7 +1997,7 @@ function default.register_decorations()
 			persist = 0.66
 		},
 		biomes = {"savanna"},
-		y_max = 31000,
+		y_max = 95,
 		y_min = 4,
 		schematic = minetest.get_modpath("default") .. "/schematics/acacia_log.mts",
 		flags = "place_center_x",
@@ -2018,7 +2022,7 @@ function default.register_decorations()
 			persist = 0.66
 		},
 		biomes = {"deciduous_forest"},
-		y_max = 31000,
+		y_max = 89,
 		y_min = 41,
 		schematic = minetest.get_modpath("default") .. "/schematics/aspen_tree.mts",
 		flags = "place_center_x, place_center_z",
@@ -2039,8 +2043,8 @@ function default.register_decorations()
 			persist = 0.66
 		},
 		biomes = {"deciduous_forest"},
-		y_max = 31000,
-		y_min = 4,
+		y_max = 89,
+		y_min = 41,
 		schematic = minetest.get_modpath("default") .. "/schematics/aspen_log.mts",
 		flags = "place_center_x",
 		rotation = "random",
@@ -2132,8 +2136,8 @@ function default.register_decorations()
 		},
 		biomes = {"grassland", "deciduous_forest",
 			"floatland_grassland"},
-		y_max = 31000,
-		y_min = 2,
+		y_max = 124,
+		y_min = 3,
 		schematic = minetest.get_modpath("default") .. "/schematics/bush.mts",
 		flags = "place_center_x, place_center_z",
 	})
@@ -2154,8 +2158,8 @@ function default.register_decorations()
 			persist = 0.7,
 		},
 		biomes = {"savanna"},
-		y_max = 31000,
-		y_min = 2,
+		y_max = 105,
+		y_min = 5,
 		schematic = minetest.get_modpath("default") .. "/schematics/acacia_bush.mts",
 		flags = "place_center_x, place_center_z",
 	})
@@ -2175,9 +2179,9 @@ function default.register_decorations()
 			octaves = 3,
 			persist = 0.7,
 		},
-		biomes = {"taiga", "taiga2", "snowy_grassland", "snowy_grassland2", "taiga2", "snowy_grassland2"},
-		y_max = 31000,
-		y_min = 4,
+		biomes = {"taiga", "taiga2", "snowy_grassland", "snowy_grassland2", "taiga2", "snowy_grassland2", "coniferous_forest", "grassland", "grassy"},
+		y_max = 182,
+		y_min = 105,
 		schematic = minetest.get_modpath("default") .. "/schematics/pine_bush.mts",
 		flags = "place_center_x, place_center_z",
 	})
@@ -2291,15 +2295,17 @@ function default.register_decorations()
 		flags = "force_placement",
 	})
 
-	-- Tundra patchy snow
---[[
+	-- mountain patchy snow
+
 	minetest.register_decoration({
 		deco_type = "simple",
 		place_on = {
 			"default:permafrost_with_moss",
 			"default:permafrost_with_stones",
 			"default:stone",
-			"default:gravel"
+			"default:gravel",
+			"default:dirt_with_grass",
+			"default:dirt_with_snow"
 		},
 		sidelen = 4,
 		noise_params = {
@@ -2310,12 +2316,12 @@ function default.register_decorations()
 			octaves = 3,
 			persist = 1.0
 		},
-		biomes = {"tundra", "tundra2", "tundra_beach"},
-		y_max = 50,
-		y_min = 1,
+		biomes = {"tundra", "tundra2", "tundra_beach", "grassy", "snowy_grassland", "alpine", "coniferous_forest", "grassland"},
+		y_max = 155,
+		y_min = 125,
 		decoration = "default:snow",
 	})
---]]
+
 	-- Coral reef
 
 	minetest.register_decoration({
@@ -2399,22 +2405,7 @@ minetest.clear_registered_decorations()
 
 local mg_name = minetest.get_mapgen_setting("mg_name")
 
-if mg_name == "v6" then
-	default.register_mgv6_ores()
-	default.register_mgv6_decorations()
--- Need to check for 'nofloatlands' because that contains
--- 'floatlands' which makes the second condition true.
-elseif mg_name == "v7" and
-		captures_float == "floatlands" and
-		captures_nofloat ~= "nofloatlands" then
-	-- Mgv7 with floatlands and floatland biomes
-	default.register_biomes(default.mgv7_shadow_limit - 1)
-	default.register_floatland_biomes(
-		default.mgv7_floatland_level, default.mgv7_shadow_limit)
-	default.register_ores()
-	default.register_decorations()
-else
 	default.register_biomes(31000)
 	default.register_ores()
 	default.register_decorations()
-end
+
