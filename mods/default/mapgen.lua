@@ -2305,7 +2305,8 @@ function default.register_decorations()
 			"default:stone",
 			"default:gravel",
 			"default:dirt_with_grass",
-			"default:dirt_with_snow"
+			"default:dirt_with_snow",
+			"default:dirt_with_coniferous_litter"
 		},
 		sidelen = 4,
 		noise_params = {
