@@ -24,7 +24,7 @@ minetest.register_alias("flowers:flower_dandelion_yellow", "flowers:dandelion_ye
 minetest.register_alias("flowers:flower_geranium", "flowers:geranium")
 minetest.register_alias("flowers:flower_viola", "flowers:viola")
 minetest.register_alias("flowers:flower_dandelion_white", "flowers:dandelion_white")
-
+minetest.register_alias("flowers:flower_dandelion_white2", "flowers:dandelion_white2")
 
 -- Flower registration
 
@@ -111,7 +111,46 @@ for _,item in pairs(flowers.datas) do
 	add_simple_flower(unpack(item))
 end
 
-
+minetest.register_node("flowers:dandelion_white2", {
+		description = "White Dandelion",
+		drawtype = "plantlike",
+		waving = 1,
+		tiles = {"flowers_dandelion_white.png"},
+		inventory_image = "flowers_dandelion_white.png",
+		wield_image = "flowers_dandelion_white.png",
+		sunlight_propagates = true,
+		paramtype = "light",
+		walkable = false,
+		buildable_to = true,
+		stack_max = 99,
+		groups = {color_white = 1, flammable = 1, snappy = 3, flower = 1, flora = 1, attached_node=1},
+		sounds = default.node_sound_leaves_defaults(),
+		selection_box = {
+			type = "fixed",
+			fixed = {-5 / 16, -0.5, -5 / 16, 5 / 16, -2 / 16, 5 / 16},
+		}
+	}
+)
+	
+minetest.register_decoration({
+		name = "flowers:dandelion_white2",
+		deco_type = "simple",
+		place_on = {"default:dirt_with_grass", "default:dirt_with_coniferous_litter"},
+		sidelen = 16,
+		noise_params = {
+			offset = -0.02,
+			scale = 0.04,
+			spread = {x = 200, y = 200, z = 200},
+			seed = seed,
+			octaves = 3,
+			persist = 0.6
+		},
+		biomes = {"grassland", "deciduous_forest", "floatland_grassland", "coniferous_forest"},
+		y_max = 180,
+		y_min = 2,
+		decoration = "flowers:dandelion_white2",
+	})	
+		
 -- Flower spread
 -- Public function to enable override by mods
 
@@ -190,7 +229,7 @@ minetest.register_node("flowers:mushroom_red", {
 	sunlight_propagates = true,
 	walkable = false,
 	buildable_to = true,
-	groups = {snappy = 3, attached_node = 1, flammable = 1},
+	groups = {snappy = 3, attached_node = 1, flammable = 1, flora = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	on_use = minetest.item_eat(-5),
 	selection_box = {
@@ -209,7 +248,7 @@ minetest.register_node("flowers:mushroom_brown", {
 	sunlight_propagates = true,
 	walkable = false,
 	buildable_to = true,
-	groups = {food_mushroom = 1, snappy = 3, attached_node = 1, flammable = 1},
+	groups = {food_mushroom = 1, snappy = 3, attached_node = 1, flammable = 1, flora = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	on_use = minetest.item_eat(1),
 	selection_box = {
