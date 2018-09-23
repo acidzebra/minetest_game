@@ -1338,7 +1338,7 @@ function default.register_biomes(upper_limit)
 		min_pos = {x = -31000, y = 6, z = -20300},
 		max_pos = {x = 31000, y = 63, z = 20400},
 		depth_riverbed = 2,
-		vertical_blend = 6,
+		vertical_blend = 3,
 		heat_point = 55,
 		humidity_point = 60,
 	})
@@ -1349,11 +1349,11 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:dirt",
 		depth_filler = 3,
-		min_pos = {x = -31000, y = -1, z = -20500},
-		max_pos = {x = 31000, y = 0, z = 20600},
+		min_pos = {x = -31000, y = 2, z = -20500},
+		max_pos = {x = 31000, y = 5, z = 20600},
 		node_riverbed = "default:sand",
-		depth_riverbed = 2,
-		vertical_blend = 3,
+		--depth_riverbed = 2,
+		--vertical_blend = 1,
 		heat_point = 60,
 		humidity_point = 68,
 	})
@@ -1485,7 +1485,7 @@ function default.register_biomes(upper_limit)
 		max_pos = {x = 31000, y = 44, z = 20400},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
-		vertical_blend = 5,
+		vertical_blend = 4,
 		heat_point = 79,
 		humidity_point = 32,
 	})
@@ -1495,12 +1495,12 @@ function default.register_biomes(upper_limit)
 		node_top = "default:dirt",
 		depth_top = 1,
 		node_filler = "default:dirt",
-		min_pos = {x = -31000, y = -1, z = -20500},
-		max_pos = {x = 31000, y = 0, z = 20600},
+		min_pos = {x = -31000, y = 2, z = -20500},
+		max_pos = {x = 31000, y = 4, z = 20600},
 		depth_filler = 3,
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
-		vertical_blend = 2,
+		--vertical_blend = 2,
 		heat_point = 79,
 		humidity_point = 42,
 	})
@@ -1532,7 +1532,7 @@ function default.register_biomes(upper_limit)
 		min_pos = {x = -31000, y = 5, z = -20300},
 		max_pos = {x = 31000, y = 45, z = 20400},
 		depth_riverbed = 2,
-		vertical_blend = 5,
+		vertical_blend = 3,
 		heat_point = 76,
 		humidity_point = 75,
 	})
@@ -1543,11 +1543,11 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:dirt",
 		depth_filler = 3,
-		min_pos = {x = -31000, y = -1, z = -20500},
-		max_pos = {x = 31000, y = 0, z = 20600},
+		min_pos = {x = -31000, y = 2, z = -20500},
+		max_pos = {x = 31000, y = 5, z = 20600},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
-		vertical_blend = 2,
+		--vertical_blend = 2,
 		heat_point = 76,
 		humidity_point = 75,
 	})
@@ -1639,13 +1639,13 @@ function default.register_mgv6_decorations()
 		sidelen = 16,
 		noise_params = {
 			offset = -0.3,
-			scale = 0.7,
+			scale = 0.07,
 			spread = {x = 100, y = 100, z = 100},
 			seed = 354,
 			octaves = 3,
 			persist = 0.7
 		},
-		y_max = 1,
+		y_max = 50,
 		y_min = 1,
 		decoration = "default:papyrus",
 		height = 2,
@@ -1682,7 +1682,7 @@ function default.register_mgv6_decorations()
 		minetest.register_decoration({
 			name = "default:grass_"..length,
 			deco_type = "simple",
-			place_on = {"default:dirt_with_grass"},
+			place_on = {"default:dirt_with_grass", "ethereal:prairie_dirt", "ethereal:grove_dirt", "ethereal:bamboo_dirt"},
 			sidelen = 16,
 			noise_params = {
 				offset = 0,
@@ -1693,7 +1693,7 @@ function default.register_mgv6_decorations()
 				persist = 0.6
 			},
 			y_max = 30,
-			y_min = 1,
+			y_min = 2,
 			decoration = "default:grass_"..length,
 		})
 	end
@@ -1739,7 +1739,7 @@ local function register_grass_decoration(offset, scale, length)
 		},
 		biomes = {"grassland", "deciduous_forest", "floatland_grassland"},
 		y_max = 185,
-		y_min = 1,
+		y_min = 2,
 		decoration = "default:grass_" .. length,
 	})
 end
@@ -1760,7 +1760,7 @@ local function register_dry_grass_decoration(offset, scale, length)
 		},
 		biomes = {"savanna"},
 		y_max = 185,
-		y_min = 1,
+		y_min = 2,
 		decoration = "default:dry_grass_" .. length,
 	})
 end
@@ -1875,7 +1875,7 @@ function default.register_decorations()
 		fill_ratio = 0.005,
 		biomes = {"rainforest", "rainforest_swamp"},
 		y_max = 120,
-		y_min = -1,
+		y_min = 2,
 		schematic = minetest.get_modpath("default") .. "/schematics/jungle_tree.mts",
 		flags = "place_center_x, place_center_z",
 		rotation = "random",
@@ -1890,7 +1890,7 @@ function default.register_decorations()
 		fill_ratio = 0.002,
 		biomes = {"rainforest", "rainforest_swamp"},
 		y_max = 120,
-		y_min = 1,
+		y_min = 2,
 		schematic = minetest.get_modpath("default") .. "/schematics/jungle_log.mts",
 		flags = "place_center_x",
 		rotation = "random",
@@ -2107,15 +2107,15 @@ function default.register_decorations()
 		sidelen = 16,
 		noise_params = {
 			offset = -0.3,
-			scale = 0.7,
+			scale = 0.07,
 			spread = {x = 200, y = 200, z = 200},
 			seed = 354,
 			octaves = 3,
 			persist = 0.7
 		},
-		biomes = {"savanna_shore"},
-		y_max = 0,
-		y_min = 0,
+		biomes = {"savanna_shore", "northern_estuary"},
+		y_max = 55,
+		y_min = 1,
 		schematic = minetest.get_modpath("default") .. "/schematics/papyrus.mts",
 	})
 
