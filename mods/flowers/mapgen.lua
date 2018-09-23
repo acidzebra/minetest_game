@@ -17,7 +17,7 @@ local function register_mgv6_flower(flower_name)
 			persist = 0.6
 		},
 		y_max = 30,
-		y_min = 1,
+		y_min = 2,
 		decoration = "flowers:"..flower_name,
 	})
 end
@@ -37,7 +37,7 @@ local function register_mgv6_mushroom(mushroom_name)
 			persist = 0.6
 		},
 		y_max = 30,
-		y_min = 1,
+		y_min = 2,
 		decoration = "flowers:"..mushroom_name,
 		spawn_by = "default:tree",
 		num_spawn_by = 1,
@@ -52,7 +52,7 @@ local function register_mgv6_waterlily()
 		sidelen = 16,
 		noise_params = {
 			offset = -0.12,
-			scale = 0.3,
+			scale = 0.15,
 			spread = {x = 100, y = 100, z = 100},
 			seed = 33,
 			octaves = 3,
@@ -94,15 +94,15 @@ local function register_flower(seed, flower_name)
 		sidelen = 16,
 		noise_params = {
 			offset = -0.02,
-			scale = 0.04,
+			scale = 0.02,
 			spread = {x = 200, y = 200, z = 200},
 			seed = seed,
 			octaves = 3,
 			persist = 0.6
 		},
-		biomes = {"grassland", "deciduous_forest", "floatland_grassland"},
+		biomes = {"grassland", "deciduous_forest", "floatland_grassland", "northern_estuary", "pohutukawa_forest", "kauri_forest", "northern_podocarp_forest"},
 		y_max = 123,
-		y_min = 1,
+		y_min = 2,
 		decoration = "flowers:"..flower_name,
 	})
 end
@@ -111,7 +111,7 @@ local function register_mushroom(mushroom_name)
 	minetest.register_decoration({
 		name = "flowers:"..mushroom_name,
 		deco_type = "simple",
-		place_on = {"default:dirt_with_grass", "default:dirt_with_coniferous_litter"},
+		place_on = {"default:dirt_with_grass", "default:dirt_with_coniferous_litter", "aotearoa:peat", "aotearoa:restiad_peat", "aotearoa:forest_peat", "aotearoa:dirt_with_dark_litter"},
 		sidelen = 16,
 		noise_params = {
 			offset = 0,
@@ -121,8 +121,7 @@ local function register_mushroom(mushroom_name)
 			octaves = 3,
 			persist = 0.66
 		},
-		biomes = {"deciduous_forest", "coniferous_forest",
-			"floatland_coniferous_forest"},
+		biomes = {"deciduous_forest", "coniferous_forest", "floatland_coniferous_forest", "peat_bog", "northern_podocarp_forest"},
 		y_max = 180,
 		y_min = 1,
 		decoration = "flowers:"..mushroom_name,
@@ -137,13 +136,13 @@ local function register_waterlily()
 		sidelen = 16,
 		noise_params = {
 			offset = -0.12,
-			scale = 0.3,
+			scale = 0.15,
 			spread = {x = 200, y = 200, z = 200},
 			seed = 33,
 			octaves = 3,
 			persist = 0.7
 		},
-		biomes = {"rainforest_swamp", "savanna_shore", "deciduous_forest_shore"},
+		biomes = {"rainforest_swamp", "savanna_shore", "northern_estuary", "pohutukawa_forest", "kauri_forest", "deciduous_forest_shore", "northern_podocarp_forest"},
 		y_max = 0,
 		y_min = 0,
 		decoration = "flowers:waterlily",

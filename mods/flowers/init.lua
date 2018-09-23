@@ -172,7 +172,7 @@ function flowers.flower_spread(pos, node)
 	end
 
 	local light = minetest.get_node_light(pos)
-	if not light or light < 13 then
+	if not light or light < 12 then
 		return
 	end
 
@@ -193,7 +193,7 @@ function flowers.flower_spread(pos, node)
 			local soil_name = minetest.get_node(soil).name
 			local soil_above = {x = soil.x, y = soil.y + 1, z = soil.z}
 			light = minetest.get_node_light(soil_above)
-			if light and light >= 13 and
+			if light and light >= 12 and
 					-- Only spread to same surface node
 					soil_name == under.name and
 					-- Desert sand is in the soil group
@@ -207,7 +207,7 @@ end
 minetest.register_abm({
 	label = "Flower spread",
 	nodenames = {"group:flora"},
-	interval = 13,
+	interval = 33,
 	chance = 300,
 	action = function(...)
 		flowers.flower_spread(...)
