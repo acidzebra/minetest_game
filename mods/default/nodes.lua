@@ -1551,7 +1551,7 @@ minetest.register_node("default:bush_stem", {
 	wield_image = "default_bush_stem.png",
 	paramtype = "light",
 	sunlight_propagates = true,
-	groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 2},
+	groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 2, dissolve = 1},
 	sounds = default.node_sound_wood_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -1622,7 +1622,7 @@ minetest.register_node("default:acacia_bush_stem", {
 	wield_image = "default_acacia_bush_stem.png",
 	paramtype = "light",
 	sunlight_propagates = true,
-	groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 2},
+	groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 2, dissolve = 1},
 	sounds = default.node_sound_wood_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -1693,7 +1693,7 @@ minetest.register_node("default:pine_bush_stem", {
 	wield_image = "default_pine_bush_stem.png",
 	paramtype = "light",
 	sunlight_propagates = true,
-	groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 2},
+	groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 2, dissolve = 1},
 	sounds = default.node_sound_wood_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -1756,7 +1756,7 @@ minetest.register_node("default:pine_bush_sapling", {
 })
 
 minetest.register_node("default:sand_with_kelp", {
-	description = "Kelp",
+	description = "Green Kelp",
 	drawtype = "plantlike_rooted",
 	waving = 1,
 	tiles = {"default_sand.png"},
@@ -1823,6 +1823,140 @@ minetest.register_node("default:sand_with_kelp", {
 })
 
 
+minetest.register_node("default:sand_with_kelp_red", {
+	description = "Red Kelp",
+	drawtype = "plantlike_rooted",
+	waving = 1,
+	tiles = {"default_sand.png"},
+	special_tiles = {{name = "default_kelp_red.png", tileable_vertical = true}},
+	inventory_image = "default_kelp_red.png",
+	paramtype = "light",
+	paramtype2 = "leveled",
+	groups = {snappy = 3},
+	selection_box = {
+		type = "fixed",
+		fixed = {
+				{-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
+				{-2/16, 0.5, -2/16, 2/16, 3.5, 2/16},
+		},
+	},
+	node_dig_prediction = "default:sand",
+	node_placement_prediction = "",
+
+	on_place = function(itemstack, placer, pointed_thing)
+		-- Call on_rightclick if the pointed node defines it
+		if pointed_thing.type == "node" and placer and
+				not placer:get_player_control().sneak then
+			local node_ptu = minetest.get_node(pointed_thing.under)
+			local def_ptu = minetest.registered_nodes[node_ptu.name]
+			if def_ptu and def_ptu.on_rightclick then
+				return def_ptu.on_rightclick(pointed_thing.under, node_ptu, placer,
+					itemstack, pointed_thing)
+			end
+		end
+
+		local pos = pointed_thing.under
+		if minetest.get_node(pos).name ~= "default:sand" then
+			return itemstack
+		end
+
+		local height = math.random(4, 6)
+		local pos_top = {x = pos.x, y = pos.y + height, z = pos.z}
+		local node_top = minetest.get_node(pos_top)
+		local def_top = minetest.registered_nodes[node_top.name]
+		local player_name = placer:get_player_name()
+
+		if def_top and def_top.liquidtype == "source" and
+				minetest.get_item_group(node_top.name, "water") > 0 then
+			if not minetest.is_protected(pos, player_name) and
+					not minetest.is_protected(pos_top, player_name) then
+				minetest.set_node(pos, {name = "default:sand_with_kelp_red",
+					param2 = height * 16})
+				if not (creative and creative.is_enabled_for
+						and creative.is_enabled_for(player_name)) then
+					itemstack:take_item()
+				end
+			else
+				minetest.chat_send_player(player_name, "Node is protected")
+				minetest.record_protection_violation(pos, player_name)
+			end
+		end
+
+		return itemstack
+	end,
+
+	after_destruct  = function(pos, oldnode)
+		minetest.set_node(pos, {name = "default:sand"})
+	end
+})
+
+
+minetest.register_node("default:sand_with_kelp_yellow", {
+	description = "Yellow Kelp",
+	drawtype = "plantlike_rooted",
+	waving = 1,
+	tiles = {"default_sand.png"},
+	special_tiles = {{name = "default_kelp_yellow.png", tileable_vertical = true}},
+	inventory_image = "default_kelp_yellow.png",
+	paramtype = "light",
+	paramtype2 = "leveled",
+	groups = {snappy = 3},
+	selection_box = {
+		type = "fixed",
+		fixed = {
+				{-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
+				{-2/16, 0.5, -2/16, 2/16, 3.5, 2/16},
+		},
+	},
+	node_dig_prediction = "default:sand",
+	node_placement_prediction = "",
+
+	on_place = function(itemstack, placer, pointed_thing)
+		-- Call on_rightclick if the pointed node defines it
+		if pointed_thing.type == "node" and placer and
+				not placer:get_player_control().sneak then
+			local node_ptu = minetest.get_node(pointed_thing.under)
+			local def_ptu = minetest.registered_nodes[node_ptu.name]
+			if def_ptu and def_ptu.on_rightclick then
+				return def_ptu.on_rightclick(pointed_thing.under, node_ptu, placer,
+					itemstack, pointed_thing)
+			end
+		end
+
+		local pos = pointed_thing.under
+		if minetest.get_node(pos).name ~= "default:sand" then
+			return itemstack
+		end
+
+		local height = math.random(4, 6)
+		local pos_top = {x = pos.x, y = pos.y + height, z = pos.z}
+		local node_top = minetest.get_node(pos_top)
+		local def_top = minetest.registered_nodes[node_top.name]
+		local player_name = placer:get_player_name()
+
+		if def_top and def_top.liquidtype == "source" and
+				minetest.get_item_group(node_top.name, "water") > 0 then
+			if not minetest.is_protected(pos, player_name) and
+					not minetest.is_protected(pos_top, player_name) then
+				minetest.set_node(pos, {name = "default:sand_with_kelp_yellow",
+					param2 = height * 16})
+				if not (creative and creative.is_enabled_for
+						and creative.is_enabled_for(player_name)) then
+					itemstack:take_item()
+				end
+			else
+				minetest.chat_send_player(player_name, "Node is protected")
+				minetest.record_protection_violation(pos, player_name)
+			end
+		end
+
+		return itemstack
+	end,
+
+	after_destruct  = function(pos, oldnode)
+		minetest.set_node(pos, {name = "default:sand"})
+	end
+})
 --
 -- Corals
 --
@@ -1830,6 +1964,30 @@ minetest.register_node("default:sand_with_kelp", {
 minetest.register_node("default:coral_brown", {
 	description = "Brown Coral",
 	tiles = {"default_coral_brown.png"},
+	groups = {cracky = 3},
+	drop = "default:coral_skeleton",
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("default:coral_purple", {
+	description = "Purple Coral",
+	tiles = {"default_coral_purple.png"},
+	groups = {cracky = 3},
+	drop = "default:coral_skeleton",
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("default:coral_blue", {
+	description = "Blue Coral",
+	tiles = {"default_coral_blue.png"},
+	groups = {cracky = 3},
+	drop = "default:coral_skeleton",
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("default:coral_yellow", {
+	description = "Brown Coral",
+	tiles = {"default_coral_yellow.png"},
 	groups = {cracky = 3},
 	drop = "default:coral_skeleton",
 	sounds = default.node_sound_stone_defaults(),
@@ -1885,6 +2043,7 @@ minetest.register_node("default:water_source", {
 	alpha = 160,
 	paramtype = "light",
 	walkable = false,
+	sunlight_propagates = true,
 	pointable = false,
 	diggable = false,
 	buildable_to = true,
@@ -1933,6 +2092,7 @@ minetest.register_node("default:water_flowing", {
 	pointable = false,
 	diggable = false,
 	buildable_to = true,
+	sunlight_propagates = true,
 	is_ground_content = false,
 	drop = "",
 	drowning = 1,
@@ -1977,6 +2137,7 @@ minetest.register_node("default:river_water_source", {
 	paramtype = "light",
 	walkable = false,
 	pointable = false,
+	sunlight_propagates = true,
 	diggable = false,
 	buildable_to = true,
 	is_ground_content = false,
@@ -2030,6 +2191,7 @@ minetest.register_node("default:river_water_flowing", {
 	pointable = false,
 	diggable = false,
 	buildable_to = true,
+	sunlight_propagates = true,
 	is_ground_content = false,
 	drop = "",
 	drowning = 1,

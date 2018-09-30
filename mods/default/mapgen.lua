@@ -59,7 +59,7 @@ function default.register_mgv6_ores()
 		wherein         = {"default:sand"},
 		clust_scarcity  = 16 * 16 * 16,
 		clust_size      = 5,
-		y_max           = 0,
+		y_max           = 5,
 		y_min           = -15,
 		noise_threshold = 0.0,
 		noise_params    = {
@@ -80,7 +80,7 @@ function default.register_mgv6_ores()
 		wherein         = {"default:stone", "default:desert_stone"},
 		clust_scarcity  = 16 * 16 * 16,
 		clust_size      = 5,
-		y_max           = 0,
+		y_max           = 250,
 		y_min           = -31,
 		noise_threshold = 0.0,
 		noise_params    = {
@@ -147,7 +147,7 @@ function default.register_mgv6_ores()
 		clust_num_ores = 9,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 0,
 	})
 
 	minetest.register_ore({
@@ -182,7 +182,7 @@ function default.register_mgv6_ores()
 		clust_num_ores = 12,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 0,
 	})
 
 	minetest.register_ore({
@@ -203,7 +203,7 @@ function default.register_mgv6_ores()
 		clust_scarcity = 24 * 24 * 24,
 		clust_num_ores = 27,
 		clust_size     = 6,
-		y_max          = -64,
+		y_max          = 364,
 		y_min          = -31000,
 	})
 
@@ -217,7 +217,7 @@ function default.register_mgv6_ores()
 		clust_num_ores = 5,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 0,
 	})
 
 	minetest.register_ore({
@@ -252,7 +252,7 @@ function default.register_mgv6_ores()
 		clust_num_ores = 5,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 0,
 	})
 
 	minetest.register_ore({
@@ -287,7 +287,7 @@ function default.register_mgv6_ores()
 		clust_num_ores = 5,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 150,
 	})
 
 	minetest.register_ore({
@@ -322,7 +322,7 @@ function default.register_mgv6_ores()
 		clust_num_ores = 5,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 0,
 	})
 
 	minetest.register_ore({
@@ -629,7 +629,7 @@ function default.register_ores()
 		clust_num_ores = 9,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 0,
 	})
 
 	minetest.register_ore({
@@ -664,7 +664,7 @@ function default.register_ores()
 		clust_num_ores = 5,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 0,
 	})
 
 	minetest.register_ore({
@@ -699,7 +699,7 @@ function default.register_ores()
 		clust_num_ores = 5,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 0,
 	})
 
 	minetest.register_ore({
@@ -734,7 +734,7 @@ function default.register_ores()
 		clust_num_ores = 12,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 0,
 	})
 
 	minetest.register_ore({
@@ -769,7 +769,7 @@ function default.register_ores()
 		clust_num_ores = 5,
 		clust_size     = 3,
 		y_max          = 31000,
-		y_min          = 1025,
+		y_min          = 150,
 	})
 
 	minetest.register_ore({
@@ -1179,7 +1179,7 @@ function default.register_biomes(upper_limit)
 		depth_riverbed = 2,
 		vertical_blend = 6,
 		min_pos = {x = -31000, y = 125, z = -31000},
-		max_pos = {x = 31000, y = 141, z = 31000},
+		max_pos = {x = 31000, y = 155, z = 31000},
 		heat_point = 8,
 		humidity_point = 30,
 	})
@@ -1290,7 +1290,7 @@ function default.register_biomes(upper_limit)
 		depth_filler = 3,
 		node_riverbed = "default:sand",
 		min_pos = {x = -31000, y = 66, z = -20100},
-		max_pos = {x = 31000, y = 180, z = 20200},
+		max_pos = {x = 31000, y = 150, z = 20200},
 		depth_riverbed = 2,
 		vertical_blend = 5,
 		heat_point = 35,
@@ -1336,7 +1336,7 @@ function default.register_biomes(upper_limit)
 		depth_filler = 3,
 		node_riverbed = "default:sand",
 		min_pos = {x = -31000, y = 6, z = -20300},
-		max_pos = {x = 31000, y = 63, z = 20400},
+		max_pos = {x = 31000, y = 68, z = 20400},
 		depth_riverbed = 2,
 		vertical_blend = 3,
 		heat_point = 55,
@@ -1382,7 +1382,7 @@ function default.register_biomes(upper_limit)
 		node_filler = "default:desert_sand",
 		depth_filler = 1,
 		node_stone = "default:desert_stone",
-		min_pos = {x = -31000, y = 12, z = -20300},
+		min_pos = {x = -31000, y = 7, z = -20300},
 		max_pos = {x = 31000, y = 33, z = 20400},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
@@ -1415,7 +1415,7 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:sand",
 		depth_filler = 1,
-		min_pos = {x = -31000, y = 14, z = -20100},
+		min_pos = {x = -31000, y = 7, z = -20100},
 		max_pos = {x = 31000, y = 66, z = 20200},
 		node_stone = "default:sandstone",
 		node_riverbed = "default:sand",
@@ -1449,7 +1449,7 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:silver_sand",
 		min_pos = {x = -31000, y = 4, z = -20500},
-		max_pos = {x = 31000, y = 57, z = 20600},
+		max_pos = {x = 31000, y = 37, z = 20600},
 		depth_filler = 1,
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
@@ -1529,10 +1529,10 @@ function default.register_biomes(upper_limit)
 		node_filler = "default:dirt",
 		depth_filler = 3,
 		node_riverbed = "default:sand",
-		min_pos = {x = -31000, y = 5, z = -20300},
+		min_pos = {x = -31000, y = 4, z = -20300},
 		max_pos = {x = 31000, y = 45, z = 20400},
 		depth_riverbed = 2,
-		vertical_blend = 3,
+		vertical_blend = 2,
 		heat_point = 76,
 		humidity_point = 75,
 	})
@@ -1543,8 +1543,8 @@ function default.register_biomes(upper_limit)
 		depth_top = 1,
 		node_filler = "default:dirt",
 		depth_filler = 3,
-		min_pos = {x = -31000, y = 2, z = -20500},
-		max_pos = {x = 31000, y = 5, z = 20600},
+		min_pos = {x = -31000, y = 3, z = -20500},
+		max_pos = {x = 31000, y = 6, z = 20600},
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
 		--vertical_blend = 2,
@@ -1915,7 +1915,7 @@ function default.register_decorations()
 		--	octaves = 3,
 		--	persist = 0.66
 		--},
-		biomes = {"taiga", "taiga2", "coniferous_forest", "floatland_coniferous_forest", "snowy_grassland"},
+		biomes = {"taiga", "taiga2", "coniferous_forest", "floatland_coniferous_forest", "snowy_grassland", "alpine"},
 		y_max = 188,
 		y_min = 50,
 		schematic = minetest.get_modpath("default") .. "/schematics/pine_tree.mts",
@@ -2265,7 +2265,7 @@ function default.register_decorations()
 		fill_ratio = 0.05,
 		biomes = {"coniferous_forest_dunes", "grassland_dunes"},
 		y_max = 6,
-		y_min = 4,
+		y_min = 3,
 		decoration = {
 			"default:marram_grass_1",
 			"default:marram_grass_2",
@@ -2337,18 +2337,107 @@ function default.register_decorations()
 			octaves = 3,
 			persist = 1,
 		},
-		biomes = {
-			"desert_ocean",
-			"savanna_ocean",
-			"rainforest_ocean",
-		},
+		-- biomes = {
+			-- "desert_ocean",
+			-- "savanna_ocean",
+			-- "rainforest_ocean",
+		-- },
 		y_max = -2,
-		y_min = -8,
+		y_min = -38,
 		schematic = minetest.get_modpath("default") .. "/schematics/corals.mts",
 		flags = "place_center_x, place_center_z",
 		rotation = "random",
 	})
+	
+	-- minetest.register_decoration({
+		-- name = "default:corals2",
+		-- deco_type = "schematic",
+		-- place_on = {"default:sand"},
+		-- noise_params = {
+			-- offset = -0.15,
+			-- scale = 0.1,
+			-- spread = {x = 100, y = 100, z = 100},
+			-- seed = 6510,
+			-- octaves = 3,
+			-- persist = 1,
+		-- },
+		-- -- biomes = {
+			-- -- "desert_ocean",
+			-- -- "savanna_ocean",
+			-- -- "rainforest_ocean",
+		-- -- },
+		-- y_max = -2,
+		-- y_min = -38,
+		-- schematic = minetest.get_modpath("default") .. "/schematics/corals2.mts",
+		-- flags = "place_center_x, place_center_z",
+		-- rotation = "random",
+	-- })
+	
+		minetest.register_decoration({
+		name = "default:corals_blue",
+		deco_type = "simple",
+		place_on = {"default:sand"},
+		noise_params = {
+			offset = -0.15,
+			scale = 0.1,
+			spread = {x = 100, y = 100, z = 100},
+			seed = 6621,
+			octaves = 3,
+			persist = 1,
+		},
+		-- biomes = {
+			-- "desert_ocean",
+			-- "savanna_ocean",
+			-- "rainforest_ocean",
+		-- },
+		y_max = -2,
+		y_min = -38,
+		decoration = "default:coral_blue",
+	})
 
+		minetest.register_decoration({
+		name = "default:corals_purple",
+		deco_type = "simple",
+		place_on = {"default:sand"},
+		noise_params = {
+			offset = -0.15,
+			scale = 0.1,
+			spread = {x = 100, y = 100, z = 100},
+			seed = 7124,
+			octaves = 3,
+			persist = 1,
+		},
+		-- biomes = {
+			-- "desert_ocean",
+			-- "savanna_ocean",
+			-- "rainforest_ocean",
+		-- },
+		y_max = -2,
+		y_min = -35,
+		decoration = "default:coral_purple",
+	})
+	
+		minetest.register_decoration({
+		name = "default:corals_yellow",
+		deco_type = "simple",
+		place_on = {"default:sand"},
+		noise_params = {
+			offset = -0.15,
+			scale = 0.1,
+			spread = {x = 100, y = 100, z = 100},
+			seed = 7124,
+			octaves = 3,
+			persist = 1,
+		},
+		-- biomes = {
+			-- "desert_ocean",
+			-- "savanna_ocean",
+			-- "rainforest_ocean",
+		-- },
+		y_max = -4,
+		y_min = -15,
+		decoration = "default:coral_yellow",
+	})
 	-- Kelp
 
 	minetest.register_decoration({
@@ -2356,32 +2445,154 @@ function default.register_decorations()
 		deco_type = "simple",
 		place_on = {"default:sand"},
 		place_offset_y = -1,
-		sidelen = 16,
-		noise_params = {
-			offset = -0.04,
+		-- sidelen = 16,
+		-- noise_params = {
+			-- offset = -0.01,
+			-- scale = 0.0125,
+			-- spread = {x = 200, y = 200, z = 200},
+			-- seed = 87112,
+			-- octaves = 3,
+			-- persist = 0.7
+		-- },
+		
+			noise_params = {
+			offset = -0.15,
 			scale = 0.1,
-			spread = {x = 200, y = 200, z = 200},
-			seed = 87112,
+			spread = {x = 100, y = 100, z = 100},
+			seed = 5921,
 			octaves = 3,
-			persist = 0.7
+			persist = 1,
 		},
-		biomes = {
-			"taiga_ocean",
-			"snowy_grassland_ocean",
-			"grassland_ocean",
-			"coniferous_forest_ocean",
-			"deciduous_forest_ocean",
-			"sandstone_desert_ocean",
-			"cold_desert_ocean"},
-		y_max = -2,
-		y_min = -7,
+		
+		-- biomes = {
+			-- "taiga_ocean",
+			-- "snowy_grassland_ocean",
+			-- "grassland_ocean",
+			-- "coniferous_forest_ocean",
+			-- "deciduous_forest_ocean",
+			-- "sandstone_desert_ocean",
+			-- "cold_desert_ocean",
+			-- "grayness_ocean",
+			-- "grassytwo_ocean",
+			-- "prairie_ocean",
+			-- "jumble_ocean",
+			-- "junglee_ocean",
+			-- "grove_ocean",
+			-- "mushroom_ocean",
+			-- "sandstone_ocean",
+			-- "plains_ocean",
+			-- "savannah_ocean",
+			-- "swamp_ocean",
+			-- "ocean",
+			-- "savanna_ocean"
+			-- },
+		y_max = -4,
+		y_min = -250,
 		flags = "force_placement",
 		decoration = "default:sand_with_kelp",
 		param2 = 48,
 		param2_max = 96,
 	})
-end
 
+	minetest.register_decoration({
+		name = "default:kelp_red",
+		deco_type = "simple",
+		place_on = {"default:sand"},
+		place_offset_y = -1,
+		-- sidelen = 16,
+		-- noise_params = {
+			-- offset = -0.02,
+			-- scale = 0.015,
+			-- spread = {x = 200, y = 200, z = 200},
+			-- seed = 49127,
+			-- octaves = 3,
+			-- persist = 0.6
+		-- },
+		
+		noise_params = {
+			offset = -0.15,
+			scale = 0.1,
+			spread = {x = 100, y = 100, z = 100},
+			seed = 8512,
+			octaves = 3,
+			persist = 1,
+		},
+		
+		-- biomes = {
+			-- "taiga_ocean",
+			-- "snowy_grassland_ocean",
+			-- "grassland_ocean",
+			-- "coniferous_forest_ocean",
+			-- "deciduous_forest_ocean",
+			-- "sandstone_desert_ocean",
+			-- "cold_desert_ocean",
+			-- "bamboo_ocean",
+			-- "mesa_ocean",
+			-- "frost_ocean",
+			-- "grassy_ocean",
+			-- "rainforest_ocean",
+			-- "jumble_ocean",
+			-- "junglee_ocean",
+			-- "grove_ocean",
+			-- "mushroom_ocean",
+			-- "sandstone_ocean",
+			-- "savanna_ocean"
+			-- },
+		y_max = -3,
+		y_min = -320,
+		flags = "force_placement",
+		decoration = "default:sand_with_kelp_red",
+		param2 = 48,
+		param2_max = 72,
+	})
+
+	minetest.register_decoration({
+		name = "default:kelp_yellow",
+		deco_type = "simple",
+		place_on = {"default:sand"},
+		place_offset_y = -1,
+		-- sidelen = 16,
+		-- noise_params = {
+			-- offset = 0.04,
+			-- scale = 0.003,
+			-- spread = {x = 200, y = 200, z = 200},
+			-- seed = 62721,
+			-- octaves = 3,
+			-- persist = 0.8
+		-- },
+		
+		noise_params = {
+			offset = -0.15,
+			scale = 0.1,
+			spread = {x = 100, y = 100, z = 100},
+			seed = 6231,
+			octaves = 3,
+			persist = 1,
+		},
+		
+		-- biomes = {
+			-- "taiga_ocean",
+			-- "snowy_grassland_ocean",
+			-- "grassland_ocean",
+			-- "coniferous_forest_ocean",
+			-- "deciduous_forest_ocean",
+			-- "sandstone_desert_ocean",
+			-- "cold_desert_ocean",
+			-- "savannah_ocean",
+			-- "swamp_ocean",
+			-- "ocean",
+			-- "grassytwo_ocean",
+			-- "prairie_ocean",
+			-- "jumble_ocean"
+			-- },
+		y_max = -8,
+		y_min = -290,
+		flags = "force_placement",
+		decoration = "default:sand_with_kelp_yellow",
+		param2 = 48,
+		param2_max = 120,
+	})
+end
 
 --
 -- Detect mapgen, flags and parameters to select functions
